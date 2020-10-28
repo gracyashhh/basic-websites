@@ -1,140 +1,134 @@
 <!DOCTYPE html>
 <html>
-<title>Reddy@Gona</title>
+<title>My Profile</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-black">
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="profileimg.png" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./photoshop.png" style="width:60%;" class="w3-round"><br><br>
+    <h4><b>Name</b></h4>
+   
   </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Gona Janardhan Reddy</h1>
-    <p>Android App Developer and Web Designer.</p>
-    <img src="profileimg.png" alt="img" class="w3-image" width="300" height="300">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Self</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p> I'm studying 3rd Yr cse in Karunya University. My passion is to develope the websites and apps 
-
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">App Devolpment</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:25%"></div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
-    </div>
-    <p class="w3-wide">Adobe XD</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">10+</span><br>
-        Projects
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">1</span><br>
-        Realtime Project
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">3</span><br>
-        Years of Experiance
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">2</span><br>
-       Events Hosted
-      </div>
-    </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-         
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> AndhraPradesh, India</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 7702961863</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: gonajanardhan@karunya.edu.in</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <!--form action="contact.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" name="Name" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" name="Email"  placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" name="Subject"  placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" name="Message"  placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" name="submit"  type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-   End Contact Section -->
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-margin-top w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROFILE</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-margin-top"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
   </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge">
-    <i class="fa fa-github w3-hover-opacity w3-margin-right"></i></t>
+  <div class="w3-panel w3-large">
     <i class="fa fa-twitter w3-hover-opacity w3-margin-right"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-      <!-- End footer -->
-  </footer>
+  </div>
+</nav>
 
-<!-- END PAGE CONTENT -->
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h3><b><br />I'm App and Web Developer</b></h3>
+    <div class="w3-section w3-padding-16"></div>
+
+  </header>
+   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>Just me, myself and I, exploring the development platform with an awsome expeiance.</p>
+    <hr>
+    
+    
+    <h4>Technical Skills</h4>
+    <!-- Progress bars / Skills -->
+    <p>App Development</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <hr>
+    <p>Web Design</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <hr>
+    <p>Adobe</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <hr>
+    <p>UI/UX</p>
+    <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+      </div>
+      <hr>
+     
+    
+    
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>email@email.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>India</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>+91 1237894560 </p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by Reddy@Gona<ul class="list-group list-group-flush"></div>
 </div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
 </html>
