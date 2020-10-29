@@ -1,0 +1,13 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid grey;   
+    transform: scale(1.2); 
+    transform: translateY(-0.5rem);
+}

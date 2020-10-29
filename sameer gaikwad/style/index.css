@@ -1,0 +1,33 @@
+body{
+    background: url("../media/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: #ffffff !important; */
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: slategrey;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+
+.content{
+    height: 82vh;
+    margin: 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content span{
+    font-size: 5rem;
+    /* color: grey !important; */
+}
